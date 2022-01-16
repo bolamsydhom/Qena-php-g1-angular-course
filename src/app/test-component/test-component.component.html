@@ -1,0 +1,33 @@
+<!-- <img [attr.Src]="'https://picsum.photos/200/300'" alt=""> -->
+
+
+<div class="default" [ngClass]="{'activeClass': active}"> Test Active</div>
+
+<div [ngStyle]="{'font-size': '46px'}">Hamda test</div>
+
+<div *ngIf="active ; else exampleEl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aspernatur, aliquam aut voluptas exercitationem cum dignissimos illum? Hic, repellat exercitationem quod similique voluptas vitae fugiat natus iste magni, repudiandae deserunt?</div>
+
+<ng-template #exampleEl>
+    <div class="section">
+        <aside>
+            <h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis blanditiis explicabo sint nobis libero sapiente illo ratione dicta, veritatis excepturi, numquam quibusdam dignissimos, adipisci reprehenderit consectetur ad neque voluptatum voluptate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, perspiciatis quod? Ullam libero suscipit porro, eveniet aut atque quidem tenetur? Nisi, libero quis. Consectetur itaque nesciunt sunt! Sequi, magni porro.
+            </h1>
+        </aside>
+    </div>
+</ng-template>
+
+<div #devEx>
+    test div 
+</div>
+
+<!-- <div id="devEx">
+    test div
+</div>
+
+document.getElementById('devEx')
+ -->
+
+<div>
+    {{devEx.innerHTML + 'clone'}}
+</div>

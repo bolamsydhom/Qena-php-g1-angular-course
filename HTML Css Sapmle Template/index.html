@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <!-- upper header app-top-nav-component-->
+        <div class="header__upper">
+            <!-- container -->
+            <div class="container">
+                <!-- contact info -->
+                <ul class="list list--hr list--hr-separator">
+                    <li class="list__item">
+                        <span class="info">
+                            <!-- icon -->
+                            <i class="info__icon far fa-dot-circle"></i>
+                            <!-- info -->
+                            <span class="info__data">1234 Street Name, City Name</span>
+                        </span>
+                    </li>
+                    <li class="list__item">
+                        <a href="#" class="info">
+                            <!-- icon -->
+                            <i class="info__icon fab fa-whatsapp"></i>
+                            <!-- info -->
+                            <span class="info__data">123-456-7890</span>
+                        </a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#" class="info">
+                            <!-- icon -->
+                            <i class="info__icon far fa-envelope"></i>
+                            <!-- info -->
+                            <span class="info__data">mail@domain.com</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- side menu -->
+                <ul class="list list--hr">
+                    <li class="list__item">
+                        <a href="#" class="link">
+                            <!-- icon -->
+                            <i class="link__icon fas fa-angle-right"></i>
+                            <!-- info -->
+                            About Us
+                        </a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#" class="link">
+                            <!-- icon -->
+                            <i class="link__icon fas fa-angle-right"></i>
+                            <!-- info -->
+                            Contact Us
+                        </a>
+                    </li>
+                    <!-- languges -->
+                    <li class="list__item">
+                        <!-- drop down -->
+                        <!-- to oppen dropdown dropdown--opened -->
+                        <div class="dropdown ">
+                            <!-- header -->
+                            <div class="dropdown__header">
+                                <a href="#" class="link">
+                                    <img class="flag flag-us" src="" alt="">
+                                    English
+                                </a>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+
+                            <!-- items -->
+                            <div class="dropdown__body">
+                                <ul class="dropdown__items list">
+                                    <li class="dropdown__item list__item">
+                                        <a href="#" class="link">
+                                            <img class="flag flag-us" src="" alt="">
+                                            English
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item list__item">
+                                        <a href="#" class="link">
+                                            <img class="flag flag-es" src="" alt="">
+                                            Español
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item list__item">
+                                        <a href="#" class="link">
+                                            <img class="flag flag-fr" src="" alt="">
+                                            Française
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- app-navbar -->
+        <!-- middle header -->
+        <div class="header__middle container">
+            <!-- logo -->
+            <a href="#" class="header__logo-box">
+                <img class="header__logo" src="img/logo.png" alt="">
+            </a>
+            <!-- user options -->
+            <div class="header__user-options">
+                <!-- login control -->
+                <a href="#" class="link">Login</a>
+                <div class="dropdown">
+                    <div class="dropdown__header">
+                        <div class="image image--small image--circle" style="background-image: url('img/PersonalImage.png')">
+                        </div>
+                    </div>
+                    <div class="dropdown__body">
+
+                    </div>
+                </div>
+                <!-- shopping card dropdown -->
+                <!-- dropdown--opened to open -->
+                <div class="dropdown dropdown--left  ">
+                    <!-- header -->
+                    <div class="dropdown__header">
+                        <div class="image image--small" style="background-image: url('img/icons/icon-cart-big.svg')">
+                            <div class="notification notification--danger">
+                                1
+                            </div>
+                        </div>
+                    </div>
+                    <!-- body -->
+                    <div class="dropdown__body">
+                        <!-- items -->
+                        <ul class="dropdown__items list list--vr-separator">
+                            <li class="dropdown__item list__item">
+                                <!-- item small 2 -->
+                                <div class="item-small-1">
+                                    <!-- item data -->
+                                    <div class="item-small-1__data">
+                                        <!-- title -->
+                                        <a href="" class="item-small-1__title">Camera X1000</a>
+                                        <!-- price -->
+                                        <span class="item-small-1__description">
+                                            1 X $890
+                                        </span>
+                                    </div>
+                                    <!-- item image -->
+                                    <div class="item-small-1__image-box">
+                                        <a href="#" class="item-small-1__image image" style="background-image: url('img/products/product-1.jpg')">
+                                        </a>
+                                        <a href="#" class="item-small-1__action">
+                                            <i class="fas fa-times"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown__item list__item">
+                                <div class="item-small-1">
+                                    <!-- item data -->
+                                    <div class="item-small-1__data">
+                                        <!-- title -->
+                                        <a href="" class="item-small-1__title">Camera X2000</a>
+                                        <!-- price -->
+                                        <span class="item-small-1__description">
+                                            2 X $990
+                                        </span>
+                                    </div>
+                                    <!-- item image -->
+                                    <div class="item-small-1__image-box">
+                                        <a href="#" class="item-small-1__image image" style="background-image: url('img/products/product-1.jpg')">
+                                        </a>
+                                        <a href="" class="item-small-1__action">
+                                            <i class="fas fa-times"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- totals -->
+                        <div class="separator"></div>
+                        <div class="block">
+                            <span class="lable">Total:</span>
+                            <span class="lable">$2870</span>
+                        </div>
+                        <!-- actions -->
+                        <div class="block list list--hr">
+                            <a class="list-item btn btn--gray" href="">View Cart</a>
+                            <a class="list-item btn btn--primary" href="">Checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- lower header -->
+        <div class="header__lower container">
+            <!-- navigation -->
+            <nav class="nav">
+                <ul class="nav__items list list--hr">
+                    <!-- items -->
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Home</a>
+                    </li>
+                    <li class="nav__item dropdown ">
+                        <!-- title -->
+                        <a class="nav__link dropdown__header" href="#">
+                            Products
+                        </a>
+                        <!-- items -->
+                        <div class="dropdown__body">
+                            <ul class=" list">
+                                <li class="list__item">
+                                    <a class="nav__inner-link" href="#">Product Listing</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="nav__inner-link" href="#">Add Product</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- Listing Items -->
+    <div class="container">
+        <!-- filters -->
+        <section class="filters">
+            <!-- search box -->
+            <div class="search-box">
+                <input class="search-box__input" placeholder="Search..." type="text" name="txt_search" id="">
+                <button type="submit" class="search-box__btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <!-- filter list -->
+            <div>
+                <!-- filter header -->
+                <h5>Categories</h5>
+                <!-- filter list -->
+                <ul class="list list--vr-separator">
+                    <li class="link list__item"><i class="link__icon fas fa-angle-right"></i>Arts & Crafts</li>
+                    <li class="link list__item"><i class="link__icon fas fa-angle-right"></i>Automotive</li>
+                    <li class="link list__item"><i class="link__icon fas fa-angle-right"></i>Baby</li>
+                    <li class="link list__item"><i class="link__icon fas fa-angle-right"></i>Books</li>
+                    <li class="link list__item"><i class="link__icon fas fa-angle-right"></i>Eletronics</li>
+                    <li class="link list__item"><i class="link__icon fas fa-angle-right"></i>Women's Fashion</li>
+                    <li class="link list__item"><i class="link__icon fas fa-angle-right"></i>Men's Fashion</li>
+                    <li class="link list__item"><i class="link__icon fas fa-angle-right"></i>Health & Household</li>
+                    <li class="link list__item"><i class="link__icon fas fa-angle-right"></i>Home & Kitchen</li>
+                    <li class="link list__item"><i class="link__icon fas fa-angle-right"></i>Military Accessories</li>
+                    <li class="link list__item"><i class="link__icon fas fa-angle-right"></i>Movies & Television</li>
+                    <li class="link list__item"><i class="link__icon fas fa-angle-right"></i>Sports & Outdoors</li>
+                    <li class="link list__item"><i class="link__icon fas fa-angle-right"></i>Tools & Home Improvement</li>
+                    <li class="link list__item"><i class="link__icon fas fa-angle-right"></i>Toys & Games</li>
+                </ul>
+            </div>
+            <!-- filter tags -->
+            <div>
+                <!-- filter header -->
+                <h5>Tags</h5>
+                <!-- filter tags -->
+                <div class="tags">
+                    <span class="tag">Nike</span>
+                    <span class="tag">Travel</span>
+                    <span class="tag">Sport</span>
+                    <span class="tag">Tv</span>
+                    <span class="tag">Books</span>
+                    <span class="tag">Tech</span>
+                    <span class="tag">Addidas</span>
+                    <span class="tag">Promo</span>
+                    <span class="tag">Reading</span>
+                    <span class="tag">Social</span>
+                    <span class="tag">New</span>
+                    <span class="tag">Special</span>
+                    <span class="tag">Food</span>
+                    <span class="tag">Used</span>
+                </div>
+            </div>
+            <!-- related items -->
+            <div>
+                <!-- title -->
+                <h5></h5>
+                <!-- small item -->
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+        <!-- Items -->
+        <section class="item-listing"> <!--app-product-list-->
+            <!-- tools (sorting , change view , exporting) -->
+            <div class="item-listing__tools">
+                <select class="form-control" name="" id="">
+                    <option value="1">Featured</option>
+                    <option value="2">Price low to high</option>
+                    <option value="3">Price high to low</option>
+                    <option value="4">Name</option>
+                </select>
+                <a class="action-btn" href="#">
+                    <i class="fas fa-plus"></i>
+                </a>
+            </div>
+            <!-- items -->
+            <div class="item-listing__items item-listing--3items">
+                <!-- medium item -->
+                <div class="item-medium-1">
+                    <div class="item-medium-1__alert">Sale</div>
+                    <div class="item-medium-1__image image" style="background-image: url('img/products/product-grey-1.jpg')">
+                        <a href="#" class="item-medium-1__action">Add to Cart</a>
+                    </div>
+                    <a href="#">
+                        <h4>Photo Camera</h4>
+                        <div class="flex-row">
+                            <div>
+                                <del>$325</del>
+                                <span class="lable">$299</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="crud-actions">
+                        <a href="#"><i class="far fa-eye"></i></a>
+                        <a href="#"><i class="fas fa-edit"></i></a>
+                        <a href="#"><i class="fas fa-trash-alt"></i></a>
+                    </div>
+                </div>
+                <div class="item-medium-1">
+                    <div class="item-medium-1__image image" style="background-image: url('img/products/product-grey-1.jpg')">
+                        <a href="#" class="item-medium-1__action">Add to Cart</a>
+                    </div>
+                    <a href="#">
+                        <h4>Photo Camera</h4>
+                        <div>
+                            <del>$325</del>
+                            <span class="lable">$299</span>
+                        </div>
+                    </a>
+                    <div class="crud-actions">
+                        <a href="#"><i class="far fa-eye"></i></a>
+                        <a href="#"><i class="fas fa-edit"></i></a>
+                        <a href="#"><i class="fas fa-trash-alt"></i></a>
+                    </div>
+                </div>
+                <div class="item-medium-1">
+                    <div class="item-medium-1__alert">Sale</div>
+                    <div class="item-medium-1__image image" style="background-image: url('img/products/product-grey-1.jpg')">
+                        <a href="#" class="item-medium-1__action">Add to Cart</a>
+                    </div>
+                    <a href="#">
+                        <h4>Photo Camera</h4>
+                        <div>
+                            <del>$325</del>
+                            <span class="lable">$299</span>
+                        </div>
+                    </a>
+                    <div class="crud-actions">
+                        <a href="#"><i class="far fa-eye"></i></a>
+                        <a href="#"><i class="fas fa-edit"></i></a>
+                        <a href="#"><i class="fas fa-trash-alt"></i></a>
+                    </div>
+                </div>
+                <div class="item-medium-1">
+                    <div class="item-medium-1__image image" style="background-image: url('img/products/product-grey-1.jpg')">
+                        <a href="#" class="item-medium-1__action">Add to Cart</a>
+                    </div>
+                    <a href="#">
+                        <h4>Photo Camera</h4>
+                        <div>
+                            <del>$325</del>
+                            <span class="lable">$299</span>
+                        </div>
+                    </a>
+                    <div class="crud-actions">
+                        <a href="#"><i class="far fa-eye"></i></a>
+                        <a href="#"><i class="fas fa-edit"></i></a>
+                        <a href="#"><i class="fas fa-trash-alt"></i></a>
+                    </div>
+                </div>
+                <div class="item-medium-1">
+                    <div class="item-medium-1__image image" style="background-image: url('img/products/product-grey-1.jpg')">
+                        <a href="#" class="item-medium-1__action">Add to Cart</a>
+                    </div>
+                    <a href="#">
+                        <h4>Photo Camera</h4>
+                        <div>
+                            <del>$325</del>
+                            <span class="lable">$299</span>
+                        </div>
+                    </a>
+                    <div class="crud-actions">
+                        <a href="#"><i class="far fa-eye"></i></a>
+                        <a href="#"><i class="fas fa-edit"></i></a>
+                        <a href="#"><i class="fas fa-trash-alt"></i></a>
+                    </div>
+                </div>
+                <div class="item-medium-1">
+                    <div class="item-medium-1__image image" style="background-image: url('img/products/product-grey-1.jpg')">
+                        <a href="#" class="item-medium-1__action">Add to Cart</a>
+                    </div>
+                    <a href="#">
+                        <h4>Photo Camera</h4>
+                        <div>
+                            <del>$325</del>
+                            <span class="lable">$299</span>
+                        </div>
+                    </a>
+                    <div class="crud-actions">
+                        <a href="#"><i class="far fa-eye"></i></a>
+                        <a href="#"><i class="fas fa-edit"></i></a>
+                        <a href="#"><i class="fas fa-trash-alt"></i></a>
+                    </div>
+                </div>
+                <div class="item-medium-1">
+                    <div class="item-medium-1__alert">Sale</div>
+                    <div class="item-medium-1__image image" style="background-image: url('img/products/product-grey-1.jpg')">
+                        <a href="#" class="item-medium-1__action">Add to Cart</a>
+                    </div>
+                    <a href="#">
+                        <h4>Photo Camera</h4>
+                        <div>
+                            <del>$325</del>
+                            <span class="lable">$299</span>
+                        </div>
+                    </a>
+                    <div class="crud-actions">
+                        <a href="#"><i class="far fa-eye"></i></a>
+                        <a href="#"><i class="fas fa-edit"></i></a>
+                        <a href="#"><i class="fas fa-trash-alt"></i></a>
+                    </div>
+                </div>
+                <div class="item-medium-1">
+                    <div class="item-medium-1__alert">Sale</div>
+                    <div class="item-medium-1__image image" style="background-image: url('img/products/product-grey-1.jpg')">
+                        <a href="#" class="item-medium-1__action">Add to Cart</a>
+                    </div>
+                    <a href="#">
+                        <h4>Photo Camera</h4>
+                        <div>
+                            <del>$325</del>
+                            <span class="lable">$299</span>
+                        </div>
+                    </a>
+                    <div class="crud-actions">
+                        <a href="#"><i class="far fa-eye"></i></a>
+                        <a href="#"><i class="fas fa-edit"></i></a>
+                        <a href="#"><i class="fas fa-trash-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- paging -->
+            <div class="paging">
+                <!-- left arrow -->
+                <div class="paging__arrow">
+                    <i class="fas fa-angle-left"></i>
+                </div>
+                <!-- page number -->
+                <div class="paging__number active">1</div>
+                <div class="paging__number">2</div>
+                <div class="paging__number">3</div>
+                <!-- right arrow -->
+                <div class="paging__arrow">
+                    <i class="fas fa-angle-right"></i>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <!-- subscription -->
+        <div></div>
+        <!-- menu -->
+        <div></div>
+        <!-- contact info -->
+        <div></div>
+    </div>
+</body>
+
+</html>

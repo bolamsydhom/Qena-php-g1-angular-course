@@ -1,0 +1,20 @@
+    <div class="item-medium-1__alert" *ngIf="productItem.discount">Sale</div>
+    <!-- Property Binding -->
+    <div class="item-medium-1__image image" [style]="'background-image: url(' + productItem.imageUrl + ')'">
+        <a href="#" class="item-medium-1__action" [innerHtml]="'Add to Cart'"></a>
+    </div>
+    <a href="#">
+        <h4>{{productItem.name}}</h4>
+        <!-- //string interpolation -->
+        <div class="flex-row">
+            <div>
+                <del *ngIf="productItem.discount">${{productItem.price}}</del>
+                <span class="lable">${{productItem.discount ? productItem.price - productItem.discount : productItem.price}}</span>
+            </div>
+        </div>
+    </a>
+    <div class="crud-actions">
+        <a href="#"><i class="far fa-eye"></i></a>
+        <a href="#"><i class="fas fa-edit"></i></a>
+        <a href="#"><i class="fas fa-trash-alt"></i></a>
+    </div>

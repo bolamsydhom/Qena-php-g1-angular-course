@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <!-- upper header -->
+        <div class="header__upper">
+            <!-- container -->
+            <div class="container">
+                <!-- contact info -->
+                <ul class="list list--hr list--hr-separator">
+                    <li class="list__item">
+                        <span class="info">
+                            <!-- icon -->
+                            <i class="info__icon far fa-dot-circle"></i>
+                            <!-- info -->
+                            <span class="info__data">1234 Street Name, City Name</span>
+                        </span>
+                    </li>
+                    <li class="list__item">
+                        <a href="#" class="info">
+                            <!-- icon -->
+                            <i class="info__icon fab fa-whatsapp"></i>
+                            <!-- info -->
+                            <span class="info__data">123-456-7890</span>
+                        </a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#" class="info">
+                            <!-- icon -->
+                            <i class="info__icon far fa-envelope"></i>
+                            <!-- info -->
+                            <span class="info__data">mail@domain.com</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- side menu -->
+                <ul class="list list--hr">
+                    <li class="list__item">
+                        <a href="#" class="link">
+                            <!-- icon -->
+                            <i class="link__icon fas fa-angle-right"></i>
+                            <!-- info -->
+                            About Us
+                        </a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#" class="link">
+                            <!-- icon -->
+                            <i class="link__icon fas fa-angle-right"></i>
+                            <!-- info -->
+                            Contact Us
+                        </a>
+                    </li>
+                    <!-- languges -->
+                    <li class="list__item">
+                        <!-- drop down -->
+                        <!-- to oppen dropdown dropdown--opened -->
+                        <div class="dropdown ">
+                            <!-- header -->
+                            <div class="dropdown__header">
+                                <a href="#" class="link">
+                                    <img class="flag flag-us" src="" alt="">
+                                    English
+                                </a>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+
+                            <!-- items -->
+                            <div class="dropdown__body">
+                                <ul class="dropdown__items list">
+                                    <li class="dropdown__item list__item">
+                                        <a href="#" class="link">
+                                            <img class="flag flag-us" src="" alt="">
+                                            English
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item list__item">
+                                        <a href="#" class="link">
+                                            <img class="flag flag-es" src="" alt="">
+                                            Español
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item list__item">
+                                        <a href="#" class="link">
+                                            <img class="flag flag-fr" src="" alt="">
+                                            Française
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- middle header -->
+        <div class="header__middle container">
+            <!-- logo -->
+            <a href="#" class="header__logo-box">
+                <img class="header__logo" src="img/logo.png" alt="">
+            </a>
+            <!-- user options -->
+            <div class="header__user-options">
+                <!-- login control -->
+                <a href="#" class="link">Login</a>
+                <div class="dropdown">
+                    <div class="dropdown__header">
+                        <div class="image image--small image--circle" style="background-image: url('img/PersonalImage.png')">
+                        </div>
+                    </div>
+                    <div class="dropdown__body">
+
+                    </div>
+                </div>
+                <!-- shopping card dropdown -->
+                <!-- dropdown--opened to open -->
+                <div class="dropdown dropdown--left  ">
+                    <!-- header -->
+                    <div class="dropdown__header">
+                        <div class="image image--small" style="background-image: url('img/icons/icon-cart-big.svg')">
+                            <div class="notification notification--danger">
+                                1
+                            </div>
+                        </div>
+                    </div>
+                    <!-- body -->
+                    <div class="dropdown__body">
+                        <!-- items -->
+                        <ul class="dropdown__items list list--vr-separator">
+                            <li class="dropdown__item list__item">
+                                <!-- item small 2 -->
+                                <div class="item-small-1">
+                                    <!-- item data -->
+                                    <div class="item-small-1__data">
+                                        <!-- title -->
+                                        <a href="" class="item-small-1__title">Camera X1000</a>
+                                        <!-- price -->
+                                        <span class="item-small-1__description">
+                                            1 X $890
+                                        </span>
+                                    </div>
+                                    <!-- item image -->
+                                    <div class="item-small-1__image-box">
+                                        <a href="#" class="item-small-1__image image" style="background-image: url('img/products/product-1.jpg')">
+                                        </a>
+                                        <a href="#" class="item-small-1__action">
+                                            <i class="fas fa-times"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown__item list__item">
+                                <div class="item-small-1">
+                                    <!-- item data -->
+                                    <div class="item-small-1__data">
+                                        <!-- title -->
+                                        <a href="" class="item-small-1__title">Camera X2000</a>
+                                        <!-- price -->
+                                        <span class="item-small-1__description">
+                                            2 X $990
+                                        </span>
+                                    </div>
+                                    <!-- item image -->
+                                    <div class="item-small-1__image-box">
+                                        <a href="#" class="item-small-1__image image" style="background-image: url('img/products/product-1.jpg')">
+                                        </a>
+                                        <a href="" class="item-small-1__action">
+                                            <i class="fas fa-times"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- totals -->
+                        <div class="separator"></div>
+                        <div class="block">
+                            <span class="lable">Total:</span>
+                            <span class="lable">$2870</span>
+                        </div>
+                        <!-- actions -->
+                        <div class="block list list--hr">
+                            <a class="list-item btn btn--gray" href="">View Cart</a>
+                            <a class="list-item btn btn--primary" href="">Checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- lower header -->
+        <div class="header__lower container">
+            <!-- navigation -->
+            <nav class="nav">
+                <ul class="nav__items list list--hr">
+                    <!-- items -->
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Home</a>
+                    </li>
+                    <li class="nav__item dropdown ">
+                        <!-- title -->
+                        <a class="nav__link dropdown__header" href="#">
+                            Products
+                        </a>
+                        <!-- items -->
+                        <div class="dropdown__body">
+                            <ul class=" list">
+                                <li class="list__item">
+                                    <a class="nav__inner-link" href="#">Product Listing</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="nav__inner-link" href="#">Add Product</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- add Item -->
+    <div class=" container">
+        <form class="add-product" action="">
+            <div class="add-product__images slider">
+                <div class="add-product__image-actions">
+                    <div class="add-product__image-action">
+                        <a href="#"><i class="fas fa-plus-square"></i></a>
+                        <a href="#"><i class="fas fa-edit"></i></a>
+                        <a href="#"><i class="fas fa-trash-alt"></i></a>
+                    </div>
+                </div>
+                <div class="slider__items">
+                    <div class="slider__item active" style="background-image: url(img/products/product-grey-7.jpg)"></div>
+                    <div class="slider__item" style="background-image: url(img/products/product-grey-7.jpg)"></div>
+                    <div class="slider__item" style="background-image: url(img/products/product-grey-7.jpg)"></div>
+                </div>
+                <div class="slider__indicators">
+                    <span class="slider__indicator active"></span>
+                    <span class="slider__indicator"></span>
+                    <span class="slider__indicator"></span>
+                </div>
+            </div>
+            <div class="add-product__data">
+                <div class="form-controls">
+                    <section class="tabs">
+                        <div class="tabs__headers">
+                            <div class="tabs__header active">
+                                English
+                            </div>
+                            <div class="tabs__header">
+                                Arabic
+                            </div>
+                        </div>
+                        <div class="tabs__bodies">
+                            <div class="tabs__body active">
+                                <div class="form-group invalid">
+                                    <label for="">Name</label>
+                                    <input class="form-control" type="text" name="" id="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Description</label>
+                                    <textarea class="form-control" name="" id="" cols="30" rows="4"></textarea>
+                                </div>
+                            </div>
+                            <div class="tabs__body ">
+                                <div class="form-group invalid">
+                                    <label for="">Name</label>
+                                    <input class="form-control" type="text" name="" id="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Description</label>
+                                    <textarea class="form-control" name="" id="" cols="30" rows="4"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="form-group">
+                        <label for="">Price</label>
+                        <input class="form-control" type="text" name="" id="">
+                    </div>
+                    <div class="add-product__discount">
+                        <div class="form-group">
+                            <label for="">Satus</label>
+                            <div class="form-group__radios">
+                                <div class="form-group__radio"><input type="radio" name="" id=""><span>On Sale</span></div>
+                                <div class="form-group__radio"><input type="radio" name="" id=""><span>Not On Sale</span></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Discount</label>
+                            <input class="form-control" type="text" name="" id="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Payment Types</label>
+                        <div class="form-group__checkboxs">
+                            <div class="form-group__checkbox"><input type="checkbox" name="" id=""><span>Direct Bank
+                                    Transfare</span></div>
+                            <div class="form-group__checkbox"><input type="checkbox" name="" id=""><span>Cheque Payment</span></div>
+                            <div class="form-group__checkbox"><input type="checkbox" name="" id=""><span>Paypal</span></div>
+                            <div class="form-group__checkbox"><input type="checkbox" name="" id=""><span>Visa</span></div>
+                            <div class="form-group__checkbox"><input type="checkbox" name="" id=""><span>Mastercard</span></div>
+                            <div class="form-group__checkbox"><input type="checkbox" name="" id=""><span>On Dilivery</span></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Category</label>
+                        <select class="form-control" name="" id="">
+                            <option value="">Arts & Crafts</option>
+                            <option value="">Automotive</option>
+                            <option value="">Baby</option>
+                            <option value="">Books</option>
+                            <option value="">Eletronics</option>
+                            <option value="">Women's Fashion</option>
+                            <option value="">Men's Fashion</option>
+                            <option value="">Health & Household</option>
+                            <option value="">Home & Kitchen</option>
+                            <option value="">Military Accessories</option>
+                            <option value="">Movies & Television</option>
+                            <option value="">Sports & Outdoors</option>
+                            <option value="">Tools & Home Improvement</option>
+                            <option value="">Toys & Games</option>
+                        </select>
+                    </div>
+
+                    <div class="taged-textbox form-group">
+                        <label class="taged-textbox__lable" for="">Tags</label>
+                        <div class="taged-textbox__data">
+                            <div class="taged-textbox__tags">
+                                <div class="taged-textbox__tag"><span>tag1</span><a href="#" class="taged-textbox__remove"><i
+                                            class="fas fa-times"></i></a></div>
+                                <div class="taged-textbox__tag"><span>tag2</span><a href="#" class="taged-textbox__remove"><i
+                                            class="fas fa-times"></i></a></div>
+                                <div class="taged-textbox__tag"><span>tag3</span><a href="#" class="taged-textbox__remove"><i
+                                            class="fas fa-times"></i></a></div>
+                                <div class="taged-textbox__tag"><span>tag4</span><a href="#" class="taged-textbox__remove"><i
+                                            class="fas fa-times"></i></a></div>
+                                <div class="taged-textbox__tag"><span>tag5</span><a href="#" class="taged-textbox__remove"><i
+                                            class="fas fa-times"></i></a></div>
+                                <div class="taged-textbox__tag"><span>tag6</span><a href="#" class="taged-textbox__remove"><i
+                                            class="fas fa-times"></i></a></div>
+                                <div class="taged-textbox__tag"><span>tag7</span><a href="#" class="taged-textbox__remove"><i
+                                            class="fas fa-times"></i></a></div>
+                                <div class="taged-textbox__tag"><span>tag8</span><a href="#" class="taged-textbox__remove"><i
+                                            class="fas fa-times"></i></a></div>
+                                <div class="taged-textbox__tag"><span>tag9</span><a href="#" class="taged-textbox__remove"><i
+                                            class="fas fa-times"></i></a></div>
+                                <div class="taged-textbox__tag"><span>tag10</span><a class="taged-textbox__remove"><i
+                                            class="fas fa-times"></i></a></div>
+                            </div>
+                            <div class="taged-textbox__clear">
+                                <a href="#"><i class="fas fa-times"></i></a>
+                            </div>
+                        </div>
+                        <input class="taged-textbox__textbox form-control" type="text" name="" id="">
+                    </div>
+                    <div class="add-product__actions">
+                        <button href="#" class="btn btn--gray">Cancel</button>
+                        <button href="#" class="btn btn--primary">Add</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <!-- subscription -->
+        <div></div>
+        <!-- menu -->
+        <div></div>
+        <!-- contact info -->
+        <div></div>
+    </div>
+</body>
+
+</html>
