@@ -19,29 +19,30 @@
         </div>
         <!-- shopping card dropdown -->
         <!-- dropdown--opened to open -->
-        <div class="dropdown dropdown--left  ">
-            <!-- header -->
-            <div class="dropdown__header">
+
+
+        <app-drop-down>
+            <ng-container class="header">
                 <div class="image image--small" style="background-image: url('assets/img/icons/iconmonstr-shopping-cart-3.svg')">
                     <div class="notification notification--danger">
-                        1
+                        {{theAddedProduct?.length}}
                     </div>
                 </div>
-            </div>
-            <!-- body -->
-            <div class="dropdown__body">
-                <!-- items -->
+            </ng-container>
+
+            <ng-container class="body">
+             <!-- items -->
                 <ul class="dropdown__items list list--vr-separator">
-                    <li class="dropdown__item list__item">
+                    <li *ngFor="let product of theAddedProduct" class="dropdown__item list__item">
                         <!-- item small 2 -->
                         <div class="item-small-1">
                             <!-- item data -->
                             <div class="item-small-1__data">
                                 <!-- title -->
-                                <a href="" class="item-small-1__title">Camera X1000</a>
+                                <a href="" class="item-small-1__title">{{product?.name}} X{{product?.price}}</a>
                                 <!-- price -->
                                 <span class="item-small-1__description">
-                                    1 X $890
+                                    1 X ${{product?.price}}
                                 </span>
                             </div>
                             <!-- item image -->
@@ -50,28 +51,6 @@
                                     style="background-image: url('img/products/product-1.jpg')">
                                 </a>
                                 <a href="#" class="item-small-1__action">
-                                    <i class="fas fa-times"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="dropdown__item list__item">
-                        <div class="item-small-1">
-                            <!-- item data -->
-                            <div class="item-small-1__data">
-                                <!-- title -->
-                                <a href="" class="item-small-1__title">Camera X2000</a>
-                                <!-- price -->
-                                <span class="item-small-1__description">
-                                    2 X $990
-                                </span>
-                            </div>
-                            <!-- item image -->
-                            <div class="item-small-1__image-box">
-                                <a href="#" class="item-small-1__image image"
-                                    style="background-image: url('img/products/product-1.jpg')">
-                                </a>
-                                <a href="" class="item-small-1__action">
                                     <i class="fas fa-times"></i>
                                 </a>
                             </div>
@@ -89,8 +68,9 @@
                     <a class="list-item btn btn--gray" href="">View Cart</a>
                     <a class="list-item btn btn--primary" href="">Checkout</a>
                 </div>
-            </div>
-        </div>
+            
+            </ng-container>
+        </app-drop-down>
     </div>
 </div>
 <!-- lower header -->
@@ -128,3 +108,5 @@
         </ul>
     </nav>
 </div>
+
+

@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopNavbarComponent implements OnInit {
 
+  address = 'dfdd'
   constructor() { }
 
   ngOnInit(): void {

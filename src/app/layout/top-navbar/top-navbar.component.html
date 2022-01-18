@@ -9,7 +9,7 @@
                     <!-- icon -->
                     <i class="info__icon far fa-dot-circle"></i>
                     <!-- info -->
-                    <span class="info__data">1234 Street Name, City Name</span>
+                    <span class="info__data">{{address}}</span>
                 </span>
             </li>
             <li class="list__item">
@@ -51,18 +51,18 @@
             <li class="list__item">
                 <!-- drop down -->
                 <!-- to oppen dropdown dropdown--opened -->
-                <div class="dropdown ">
-                    <!-- header -->
-                    <div class="dropdown__header">
+                <!-- <div class="dropdown "> -->
+                <!-- header -->
+                <!-- <div class="dropdown__header">
                         <a href="#" class="link">
                             <img class="flag flag-us" src="" alt="">
                             English
                         </a>
                         <i class="fas fa-angle-down"></i>
-                    </div>
+                    </div> -->
 
-                    <!-- items -->
-                    <div class="dropdown__body">
+                <!-- items -->
+                <!-- <div class="dropdown__body">
                         <ul class="dropdown__items list">
                             <li class="dropdown__item list__item">
                                 <a href="#" class="link">
@@ -84,9 +84,42 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
+
+
+                <app-drop-down>
+                    <ng-container class="header">
+                        <a href="#" class="link">
+                            <img class="flag flag-us" src="" alt="">
+                            English
+                        </a>
+                        <i class="fas fa-angle-down"></i>
+                    </ng-container>
+
+                    <ng-container class="body">
+                        <ul class="dropdown__items list">
+                            <li class="dropdown__item list__item">
+                                <a href="#" class="link">
+                                    <img class="flag flag-us" src="" alt="">
+                                    English
+                                </a>
+                            </li>
+                            <li class="dropdown__item list__item">
+                                <a href="#" class="link">
+                                    <img class="flag flag-es" src="" alt="">
+                                    Español
+                                </a>
+                            </li>
+                            <li class="dropdown__item list__item">
+                                <a href="#" class="link">
+                                    <img class="flag flag-fr" src="" alt="">
+                                    Française
+                                </a>
+                            </li>
+                        </ul>
+                    </ng-container>
+                </app-drop-down>
             </li>
         </ul>
     </div>
 </div>
-

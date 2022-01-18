@@ -31,3 +31,37 @@ document.getElementById('devEx')
 <div>
     {{devEx.innerHTML + 'clone'}}
 </div>
+
+
+<div #testElRef id="testDivId">
+    <div>
+        <div>
+            <div>
+                <div #newElRef>ttt</div>
+            </div>
+        </div>
+    </div>
+    some Data
+</div>
+
+<div #testClass class="testClass">
+    hamada
+</div>
+
+<div #testClass class="testClass">
+    hamada2
+</div>
+
+<div #testClass class="testClass">
+    hamada3
+</div>
+
+<div [ngSwitch]="num">
+    <ul>
+        <li *ngSwitchCase="1">True</li>
+        <li *ngSwitchCase="2">False</li>
+        <li *ngSwitchDefault>default</li>
+    </ul>
+</div>
+
+<h1>{{num}}</h1>

@@ -10,6 +10,7 @@ import { ProductListComponent } from './features/products/product-list/product-l
 import { ProductListContainerComponent } from './features/products/product-list-container/product-list-container.component';
 import { TestComponentComponent } from './test-component/test-component.component';
 import { TestDirectiveDirective } from './shared/test-directive.directive';
+import { DropDownComponent } from './shared/drop-down/drop-down.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TestDirectiveDirective } from './shared/test-directive.directive';
     ProductListComponent,
     ProductListContainerComponent,
     TestComponentComponent,
-    TestDirectiveDirective
+    TestDirectiveDirective,
+    DropDownComponent
   ],
   imports: [
     BrowserModule,

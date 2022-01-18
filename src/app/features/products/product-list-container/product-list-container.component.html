@@ -13,9 +13,8 @@
             <h5>Categories</h5>
             <!-- filter list -->
             <ul class="list list--vr-separator">
-                <li class="link list__item"><i class="link__icon fas fa-angle-right"></i>Arts & Crafts</li>
-                <li class="link list__item"><i class="link__icon fas fa-angle-right"></i>Automotive</li>
-                <li class="link list__item"><i class="link__icon fas fa-angle-right"></i>Baby</li>
+                <li *ngFor="let item of liItems" class="link list__item"><i [class]="item.className"></i>{{item.liLabel}}</li>
+
                 <li class="link list__item"><i class="link__icon fas fa-angle-right"></i>Books</li>
                 <li class="link list__item"><i class="link__icon fas fa-angle-right"></i>Eletronics</li>
                 <li class="link list__item"><i class="link__icon fas fa-angle-right"></i>Women's Fashion</li>
@@ -62,6 +61,6 @@
         </div>
     </section>
 
-    <app-product-list class="item-listing"></app-product-list>
+    <app-product-list (itemAddedFromProductListComponent)="onItemAdded($event)" class="item-listing"></app-product-list>
 
 </div>
