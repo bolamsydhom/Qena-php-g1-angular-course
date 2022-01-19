@@ -1,8 +1,10 @@
 <div class="header">
     <app-top-navbar></app-top-navbar>
-    <app-navbar [theAddedProduct]="addedProducts"></app-navbar>
+    <app-navbar></app-navbar>
 </div>
+<router-outlet></router-outlet>
 
-<app-product-list-container (onItemAddedFromContainer)="onItemAdd($event)"></app-product-list-container>
+
+
 
 <!-- <app-test-component></app-test-component> -->

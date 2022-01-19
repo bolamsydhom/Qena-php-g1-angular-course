@@ -1,6 +1,13 @@
 import { Component } from '@angular/core';
 import { Product } from './_models/product.model';
 
+// interface Cart {
+//   productsArray: {
+//     product: Product,
+//     quantity: number;
+//   }[];
+//   totalNumberOfElements: number;
+// }
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,7 +15,7 @@ import { Product } from './_models/product.model';
 })
 export class AppComponent {
   title = 'angular-course-project';
-  addedProducts: Product[] = [];
+  addedProducts!: Product[];
 
   onItemAdd(product: Product){
     this.addedProducts.push(product);

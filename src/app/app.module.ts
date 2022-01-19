@@ -11,6 +11,11 @@ import { ProductListContainerComponent } from './features/products/product-list-
 import { TestComponentComponent } from './test-component/test-component.component';
 import { TestDirectiveDirective } from './shared/test-directive.directive';
 import { DropDownComponent } from './shared/drop-down/drop-down.component';
+import { ProductService } from './_services/product.service';
+import { ProductDetailsComponent } from './features/products/product-details/product-details.component';
+import { RouterModule } from '@angular/router';
+import { ProductAddComponent } from './features/products/product-add/product-add.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,11 +27,14 @@ import { DropDownComponent } from './shared/drop-down/drop-down.component';
     ProductListContainerComponent,
     TestComponentComponent,
     TestDirectiveDirective,
-    DropDownComponent
+    DropDownComponent,
+    ProductDetailsComponent,
+    ProductAddComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

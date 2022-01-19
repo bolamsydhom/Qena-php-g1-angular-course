@@ -5,14 +5,14 @@
         <option value="3">Price high to low</option>
         <option value="4">Name</option>
     </select>
-    <a class="action-btn" href="#">
+    <a class="action-btn" routerLink="/product-add">
         <i class="fas fa-plus"></i>
     </a>
 </div>
 <div class="item-listing__items item-listing--3items">
     <!-- Directives has two types -->
     <!-- Behavioral Directives / Structural Directive -->
-    <app-product-item (itemAdded)="onItemAdded($event)" *ngFor="let item of productsArray; let hammda = index" [productItem]="item" class="item-medium-1"></app-product-item>
+    <app-product-item *ngFor="let item of productsArray; let hammda = index" [productItem]="item" class="item-medium-1"></app-product-item>
 </div>
 <!-- paging -->
 <div class="paging">

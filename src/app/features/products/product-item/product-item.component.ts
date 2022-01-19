@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Product } from 'src/app/_models/product.model';
+import { ProductService } from 'src/app/_services/product.service';
 
 @Component({
   selector: 'app-product-item',
@@ -10,18 +11,16 @@ export class ProductItemComponent implements OnInit {
 
   @Input()
   productItem!: Product;
-
-  @Output()
-  itemAdded: EventEmitter<Product> = new EventEmitter<Product>();
-  constructor() { }
+ 
+  constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
-    // document.getElementById('tese').addEventListner('click',()=>{})
   }
 
   onAddToCartPressed(){
     console.log('hamada');
-    this.itemAdded.emit(this.productItem)
+    this.productService.itemAdded.emit(this.productItem);
+    // this.productService.addItemToCart(this.productItem)
   }
 
 }

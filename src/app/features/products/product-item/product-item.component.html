@@ -3,7 +3,7 @@
     <div class="item-medium-1__image image" [style]="'background-image: url(' + productItem.imageUrl + ')'">
         <a (click)="onAddToCartPressed()" class="item-medium-1__action" [innerHtml]="'Add to Cart'"></a>
     </div>
-    <a href="#">
+    <a [routerLink]="'/product-details'">
         <h4>{{productItem.name}}</h4>
         <!-- //string interpolation -->
         <div class="flex-row">
