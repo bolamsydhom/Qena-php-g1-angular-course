@@ -39,7 +39,7 @@
                             <!-- item data -->
                             <div class="item-small-1__data">
                                 <!-- title -->
-                                <a href="" class="item-small-1__title">{{product?.name}} X{{product?.price}}</a>
+                                <a href="" class="item-small-1__title">{{product.data[0]?.name}} X{{product?.price}}</a>
                                 <!-- price -->
                                 <span class="item-small-1__description">
                                     1 X ${{product?.price}}
@@ -80,7 +80,7 @@
         <ul class="nav__items list list--hr">
             <!-- items -->
             <li class="nav__item">
-                <a class="nav__link" href="#">Home</a>
+                <a class="nav__link" routerLink="">Home</a>
             </li>
             <li class="nav__item dropdown ">
                 <!-- title -->

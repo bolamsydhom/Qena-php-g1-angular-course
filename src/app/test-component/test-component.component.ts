@@ -70,16 +70,16 @@ export class TestComponentComponent implements OnInit, AfterViewInit, OnDestroy 
   }
   ngOnInit(): void {
 
-    setInterval(()=>{
-      this.productService.testEmit({
-        id: 1,
-        name: 'Photo Camera',
-        price: 100,
-        discount: 10,
-        imageUrl: 'https://picsum.photos/200/300',
-        description: 'test',
-      })
-    }, 3000)
+    // setInterval(()=>{
+    //   this.productService.testEmit({
+    //     id: 1,
+    //     name: 'Photo Camera',
+    //     price: 100,
+    //     discount: 10,
+    //     imageUrl: 'https://picsum.photos/200/300',
+    //     description: 'test',
+    //   })
+    // }, 3000)
 
 
 

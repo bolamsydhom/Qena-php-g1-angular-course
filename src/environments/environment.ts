@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  mongoURI: 'mongodb://localhost:27007/mean-angular-app'
+  baseUrl: 'https://mearn-stack-backend-test.herokuapp.com/'
 };

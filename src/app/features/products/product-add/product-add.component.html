@@ -1,5 +1,5 @@
 <div class=" container">
-    <form class="add-product" action="">
+    <form class="add-product" #myProductForm=ngForm>
         <div class="add-product__images slider">
             <div class="add-product__image-actions">
                 <div class="add-product__image-action">
@@ -32,13 +32,18 @@
                     </div>
                     <div class="tabs__bodies">
                         <div class="tabs__body active">
-                            <div class="form-group invalid">
+                            <div class="form-group" [ngClass]="{'invalid': textInputName.invalid && textInputName.touched}">
                                 <label for="">Name</label>
-                                <input class="form-control" type="text" name="" id="">
+                                <input #textInputName="ngModel" required pattern="^[\u0621-\u064A0-9 ]+$" [value]="product.data[0]?.name" ngModel class="form-control" type="text" name="productName" id="">
+                                <span *ngIf="textInputName.touched && textInputName.invalid && textInputName.errors?.required">This field is required</span>
+                                <span *ngIf="textInputName.touched && textInputName.invalid && textInputName.errors?.pattern">Please Enter Valid Data</span>
+                                <span *ngIf="textInputName.invalid">Please enter valid data</span>
                             </div>
                             <div class="form-group">
                                 <label for="">Description</label>
-                                <textarea class="form-control" name="" id="" cols="30" rows="4"></textarea>
+                                <textarea #textInputDesc=ngModel  required [value]="product.data[0]?.description" required ngModel class="form-control" name="productDescription" id="" cols="30" rows="4"></textarea>
+                                <span *ngIf="textInputDesc.touched && textInputDesc.invalid && textInputDesc.errors?.required">This field is required</span>
+
                             </div>
                         </div>
                         <div class="tabs__body ">
@@ -56,50 +61,32 @@
 
                 <div class="form-group">
                     <label for="">Price</label>
-                    <input class="form-control" type="text" name="" id="">
+                    <input [(ngModel)]="product.price" class="form-control" type="number" name="price" id="">
+                    <span>{{product.price}}</span>
                 </div>
                 <div class="add-product__discount">
                     <div class="form-group">
                         <label for="">Satus</label>
                         <div class="form-group__radios">
-                            <div class="form-group__radio"><input type="radio" name="" id=""><span>On Sale</span></div>
-                            <div class="form-group__radio"><input type="radio" name="" id=""><span>Not On Sale</span></div>
+                            <div class="form-group__radio"><input #isOnSaleInput=ngModel type="radio" name="onSale" value=1 id="" ngModel><span>On Sale</span></div>
+                            <div class="form-group__radio"><input #isOnSaleInput=ngModel type="radio" name="onSale" id="" value=0 ngModel><span>Not On Sale</span></div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="">Discount</label>
-                        <input class="form-control" type="text" name="" id="">
+                        <input [(ngModel)]="product.discount" name="discount" class="form-control" type="number" id="" [disabled]="isOnSaleInput.value == 0">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="">Payment Types</label>
                     <div class="form-group__checkboxs">
-                        <div class="form-group__checkbox"><input type="checkbox" name="" id=""><span>Direct Bank
-                                Transfare</span></div>
-                        <div class="form-group__checkbox"><input type="checkbox" name="" id=""><span>Cheque Payment</span></div>
-                        <div class="form-group__checkbox"><input type="checkbox" name="" id=""><span>Paypal</span></div>
-                        <div class="form-group__checkbox"><input type="checkbox" name="" id=""><span>Visa</span></div>
-                        <div class="form-group__checkbox"><input type="checkbox" name="" id=""><span>Mastercard</span></div>
-                        <div class="form-group__checkbox"><input type="checkbox" name="" id=""><span>On Dilivery</span></div>
+                        <div *ngFor="let payment of paymentTypes; let i = index" class="form-group__checkbox"><input [value]="payment.id" (input)="onCheckBoxChanged(i)" ngModel type="checkbox" [name]="'check_'+i" id=""><span>{{payment.name}}</span></div>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="">Category</label>
-                    <select class="form-control" name="" id="">
-                        <option value="">Arts & Crafts</option>
-                        <option value="">Automotive</option>
-                        <option value="">Baby</option>
-                        <option value="">Books</option>
-                        <option value="">Eletronics</option>
-                        <option value="">Women's Fashion</option>
-                        <option value="">Men's Fashion</option>
-                        <option value="">Health & Household</option>
-                        <option value="">Home & Kitchen</option>
-                        <option value="">Military Accessories</option>
-                        <option value="">Movies & Television</option>
-                        <option value="">Sports & Outdoors</option>
-                        <option value="">Tools & Home Improvement</option>
-                        <option value="">Toys & Games</option>
+                    <select ngModel class="form-control" name="category" id="">
+                        <option *ngFor="let cat of categories" [value]="cat.id">{{cat.name}}</option>
                     </select>
                 </div>
 
@@ -136,7 +123,7 @@
                 </div>
                 <div class="add-product__actions">
                     <button href="#" class="btn btn--gray">Cancel</button>
-                    <button href="#" class="btn btn--primary">Add</button>
+                    <button class="btn btn--primary" (click)="onFormSubmit(textInputName)" >Add</button>
                 </div>
             </div>
         </div>

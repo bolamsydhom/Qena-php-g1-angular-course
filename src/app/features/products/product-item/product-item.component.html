@@ -1,10 +1,11 @@
     <div class="item-medium-1__alert" *ngIf="productItem.discount">Sale</div>
     <!-- Property Binding -->
-    <div class="item-medium-1__image image" [style]="'background-image: url(' + productItem.imageUrl + ')'">
+    <div class="item-medium-1__image image" [style]="'background-image: url(' + productItem.imagesUrls[0] + ')'">
         <a (click)="onAddToCartPressed()" class="item-medium-1__action" [innerHtml]="'Add to Cart'"></a>
     </div>
-    <a [routerLink]="'/product-details'">
-        <h4>{{productItem.name}}</h4>
+    <a [routerLink]="'/product/details/'+productItem._id" [queryParams]="{name: productItem.data[0].name}">
+        <!-- <a [routerLink]="['product','details',productItem.id]"> -->
+        <h4>{{productItem.data[0].name}}</h4>
         <!-- //string interpolation -->
         <div class="flex-row">
             <div>
